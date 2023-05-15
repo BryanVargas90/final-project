@@ -6,22 +6,22 @@ import { Form } from "react-bootstrap"
 
 export default function SessionForm({ setForms,setSession,session }) {
 
-    const [hostName, SetHostName] = useState ("")
-    const [nameOfTheGame, SetGame] = useState ("")
+    const [host, SetHostName] = useState ("")
+    const [game, SetGame] = useState ("")
     const [date, SetDate] = useState ("")
     const [time, SetTime] = useState ("")
-    const navigate = useNavigate 
+    const navigate = useNavigate ()
 
 
-const handleAddSession = (e) => {
+const handleAddSession = async (e) => {
     e.preventDefault()
-
-fetch("https://final-api-gaming.web.app/session", {
+//"https://final-api-gaming.web.app/session"
+fetch("http://localhost:3009/session", {
     method: "POST",
     headers: {
         "Content-type": "application/json"
     },
-    body: JSON.stringify({hostName, nameOfTheGame, date, time})
+    body: JSON.stringify({host, game, date, time})
 })
 .then(resp => resp.json()) // These lines takes the response from the API call and converts it
 //it into a JavaScript object by calling the json method
@@ -42,7 +42,7 @@ return(
     <Form onSubmit={handleAddSession} >
     <label htmlFor="creator of the session">Host:
         <input type="text"
-            value={hostName}
+            value={host}
             onChange={(e) => { SetHostName(e.target.value) }} />
     </label>
     
@@ -51,7 +51,7 @@ return(
     <label htmlFor="nameOfTheGame">Game:
                 <input
                     type="text"
-                    value={nameOfTheGame}
+                    value={game}
                     onChange={(e) => { SetGame(e.target.value) }} />
             </label>
 
@@ -60,8 +60,8 @@ return(
         <label htmlFor="date"> Date of session:
             <input
                 type="text"
-                value={Date}
-                onChange={(e) => { SetDate(e.target.value) }} />
+                value={date}
+                onChange={(e) =>  {SetDate(e.target.value) }} />
         </label>
 
         <br />
