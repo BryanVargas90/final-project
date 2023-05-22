@@ -1,0 +1,105 @@
+/* body {
+  background-image: url("../../public/images/city.gif");
+  background-size: cover;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+
+.home-back {
+  background-image: url("../../public/images/cyber1.jpg");
+  min-height: 110vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.my-sessions {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  background-image: url("../../public/images/back1.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  min-height: 100vh;
+}
+
+.center-div {
+  width: 600px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.center-div h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.each-session {
+  /* margin: 0 auto; */
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  width: 300px;
+  justify-content: flex-start;
+  margin: 20px;
+  min-height: 300px;
+  margin-top: 30px;
+  background-color: #292e38;
+  border-radius: 4px;
+}
+.left-session {
+  /* display: block; */
+  /* position: relative; */
+  padding-left: 20px;
+}
+.left-session h3 {
+  font-size: 25px;
+  font-weight: 600;
+  color: #f1f1f1;
+  font-family: "Poppins";
+}
+
+.session-info {
+  font-size: 28px;
+  position: relative;
+  top: 50px;
+  right: 40px;
+  color: #f1f1f1;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 20px;
+}
+
+.session-date {
+  /* font-size: 18px; */
+  font-weight: 500;
+}
+
+.remove-session {
+  font-size: 28px;
+  color: #d9d9d9;
+  position: relative;
+  top: 7%;
+  right: -75px;
+  background-color: rgba(127, 255, 212, 0);
+  height: 28px;
+  width: 120px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.remove-session:hover {
+  color: red;
+}
+
+/* .left-session,
+.right-session {
+  width: 35%;
+}
+
+.left-session > *,
+.right-session > * {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+} */
