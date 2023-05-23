@@ -67,7 +67,7 @@ export default function SessionForm({ setSession }) {
             <Form.Label>Game Name:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter Host"
+              placeholder="Enter Game"
               name="gameName"
               onChange={onChange}
             />
@@ -76,7 +76,7 @@ export default function SessionForm({ setSession }) {
             <Form.Label>Date:</Form.Label>
             <Form.Control
               type="date"
-              placeholder="Enter Host"
+              placeholder="Enter date"
               name="date"
               onChange={onChange}
             />
@@ -85,7 +85,7 @@ export default function SessionForm({ setSession }) {
             <Form.Label>Time:</Form.Label>
             <Form.Control
               type="time"
-              placeholder="Enter Host"
+              placeholder="Enter time"
               name="time"
               onChange={onChange}
             />
@@ -94,7 +94,7 @@ export default function SessionForm({ setSession }) {
             <Form.Label>Members:</Form.Label>
             <Form.Control
               type="text"
-              placeholder="Enter Host"
+              placeholder="Enter members"
               name="members"
               onChange={onChange}
             />
