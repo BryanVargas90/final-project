@@ -21,19 +21,20 @@ export default function SessionPanel({ session, setSession }) {
   return (
     // <Col style={{ width: "18rem" }}>
 
-    <Col md={6}>
+    <Col sm={11} md={6} lg={4}>
       <div className="each-session">
         <div className="left-session">
-          <h3>Host {session.host}</h3>
+          <h3>Host - {session.host}</h3>
           {/* <div className="session-game">Game</div> */}
         </div>
         <div className="session-info">
-          <p className="session-date">{session.date}</p>
-          <p className="session-time">{session.time}</p>
-          <div className="session-game">{session.game}</div>
-          <div className="session-members">Members {session.members}</div>
+          <p className="session-date p-3">Date: {session.date}</p>
+          <p className="session-time p-3">Time: {session.time}</p>
+          <p className="session-game p-5">Game:{session.game}</p>
+          <p className="session-members p-5">Members: {session.members}</p>
         </div>
-        <Link className="remove-session">
+        <br />
+        <Link onClick={handleDelete} className="remove-session">
           <FaTrashAlt />
         </Link>
       </div>

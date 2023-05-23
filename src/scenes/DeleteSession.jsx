@@ -25,15 +25,11 @@ export default function DeleteSession({ setSession }) {
       {user ? (
         <></>
       ) : (
-        <Container>
-          <Row>
-            <Col id="trash-button">
-              <Button onClick={handleDelete}>
-                <Trash3Fill />
-              </Button>
-            </Col>
-          </Row>
-        </Container>
+        <Col id="trash-button">
+          <Button onClick={handleDelete}>
+            <Trash3Fill />
+          </Button>
+        </Col>
       )}
     </>
   );

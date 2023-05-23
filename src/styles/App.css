@@ -3,12 +3,34 @@
   background-size: cover;
 } */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&display=swap");
 
 .home-back {
   background-image: url("../../public/images/cyber1.jpg");
   min-height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
+}
+.logo {
+  margin-top: 10px;
+  font-size: 30px;
+  color: #36dfc5;
+  text-shadow: 2px 0px 2px #d9d9d9;
+}
+.navbar-game {
+  padding-top: 20px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  background-color: black;
+}
+.navbar-game-links {
+  padding-left: 20px;
+  padding-bottom: 0%;
+  font-size: 20px;
+}
+
+.no-bg {
+  background: none;
 }
 
 .my-sessions {
@@ -22,10 +44,12 @@
   background-attachment: fixed;
   background-blend-mode: color;
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 .center-div {
-  width: 600px;
+  /* width: 600px; */
   margin-top: 20px;
   margin-bottom: 25px;
   text-align: center;
@@ -38,58 +62,183 @@
 
 .each-session {
   /* margin: 0 auto; */
-  display: flex;
-  flex-direction: row;
+  /* display: flex; */
+  /* flex-direction: row; */
   /* align-items: center; */
-  width: 300px;
-  justify-content: flex-start;
+  width: 350px;
+  /* justify-content: flex-start; */
   margin: 20px;
   min-height: 300px;
   margin-top: 30px;
-  background-color: #292e38;
-  border-radius: 4px;
+  background-color: rgba(64, 219, 181, 0.2);
+  border-radius: 8px;
+  border: 3px solid #36dfc5;
+  padding: 10px;
+  box-shadow: 8px 10px 25px -1px rgba(64, 219, 181, 0.74);
 }
 .left-session {
   /* display: block; */
-  /* position: relative; */
-  padding-left: 20px;
+  position: relative;
+  /* padding-left: 20px; */
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0 0 5px;
 }
 .left-session h3 {
-  font-size: 25px;
+  font-size: 35px;
+  margin-top: -10px;
+  margin-left: 15px;
   font-weight: 600;
-  color: #f1f1f1;
+  color: #36dfc5;
+
   font-family: "Poppins";
 }
 
 .session-info {
-  font-size: 28px;
-  position: relative;
-  top: 50px;
-  right: 40px;
+  /* font-size: 24px; */
+  /* position: relative; */
+  /* top: 50px; */
+  /* right: 40px; */
   color: #f1f1f1;
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 20px;
+  display: inline-block;
 }
 
 .session-date {
-  /* font-size: 18px; */
+  font-size: 22px;
   font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: -30px;
+  padding-left: 15px;
+  color: white;
+  /* background-color: #36dfc5; */
+
+  /* width: 120px; */
+  /* height: 38px; */
+  text-align: left;
+  margin-left: 15px;
+  font-style: italic;
+}
+.session-time {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: -30px;
+  padding-left: 15px;
+  color: white;
+  /* background-color: #36dfc5; */
+
+  /* width: 120px; */
+  /* height: 38px; */
+  text-align: left;
+  margin-left: 15px;
+  font-style: normal;
+  margin-top: -10px;
+}
+
+.session-game {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  margin-top: -30px;
+  padding-left: 15px;
+  color: white;
+  /* background-color: #36dfc5; */
+
+  /* width: 120px; */
+  /* height: 38px; */
+  text-align: left;
+  margin-left: 15px;
+  font-style: normal;
+  margin-top: -10px;
+  /* filter: drop-shadow(0 0 50px #109c1e); */
+}
+
+.session-members {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin-top: -30px;
+  padding-left: 15px;
+  color: white;
+  /* background-color: #36dfc5; */
+
+  /* width: 120px; */
+  /* height: 38px; */
+  text-align: left;
+  margin-left: 15px;
+  font-style: normal;
+  margin-top: 15px;
 }
 
 .remove-session {
   font-size: 28px;
   color: #d9d9d9;
-  position: relative;
-  top: 7%;
-  right: -75px;
-  background-color: rgba(127, 255, 212, 0);
-  height: 28px;
-  width: 120px;
+  /* background-color: rgba(127, 255, 212, 0); */
+  /* height: 28px;
+  width: 120px; */
+  position: absolute;
+  top: 80%;
+
   transition: all 0.2s linear;
   cursor: pointer;
 }
 .remove-session:hover {
   color: red;
+}
+
+.Typewriter {
+  font-variant: small-caps;
+  padding-top: 200px;
+  color: white !important;
+  font-size: 100px;
+  text-align: center;
+  text-shadow: 5px 0px 2px rgb(18, 18, 18);
+}
+
+.section-form {
+  padding: auto;
+  align-items: center;
+  width: 50%;
+}
+
+.host-form {
+  align-content: center;
+  align-items: center;
+  background-image: url("../../public/images/cyber1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: color;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.583);
+  background-blend-mode: color;
+}
+
+input {
+  padding: 3px;
+}
+
+label {
+  display: block;
+}
+
+label:after {
+  /* content: ": "; */
+}
+
+h1 {
+  font-size: 70px !important;
+  text-align: center;
+  font-family: "Titillium Web", sans-serif;
+  color: #36dfc5;
+  text-shadow: 2.5px 0px 2.5px #f1f1f1;
+}
+
+label {
+  color: white;
 }
 
 /* .left-session,
