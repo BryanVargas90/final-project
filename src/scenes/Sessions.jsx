@@ -13,7 +13,7 @@ export default function Sessions({ session, setSession }) {
         setSession(data);
       })
       .catch((err) => console.log(err));
-  }, [session]);
+  }, []);
 
   return (
     <>
